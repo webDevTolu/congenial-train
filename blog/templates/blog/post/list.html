@@ -6,4 +6,7 @@
   <a href="{{ post.get_absolute_url }}"> {{ post.title }} </a>
 </h2>
 <p>Published: {{ post.publish }} by {{ post.author }}</p>
-{{ post.body|truncatewords:30|linebreaks }} {% endfor %} {% endblock content %}
+{{ post.body|truncatewords:30|linebreaks }} {% endfor %}
+
+<div>{% include "pagination.html" with page=posts %}</div>
+{% endblock %}
