@@ -1,4 +1,4 @@
-{% extends "blog/base.html" %} {% block title %} techBlog {% endblock title %}
+{% extends "blog/base.html" %} {% load blog_tags %}  {% block title %} techBlog {% endblock title %}
 {% block content %}
 <h1>Recent blogs</h1>
 <div>
@@ -21,7 +21,7 @@
 {% endif %}
 
 <p>Published: {{ post.publish }} by {{ post.author }}</p>
-{{ post.body|truncatewords:30|linebreaks }} {% endfor %}
+{{ post.body|markdown|truncatewords:30 }} {% endfor %}
 
 <div>{% include "pagination.html" with page=posts %}</div>
 {% endblock %}

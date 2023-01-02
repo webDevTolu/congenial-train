@@ -1,9 +1,9 @@
-{% extends "blog/base.html" %} {% block title %} {{ post.title }} {% endblock %}
+{% extends "blog/base.html" %} {% load blog_tags %} {% block title %} {{ post.title }} {% endblock %}
 {% block content %}
 <a href="{% url 'blog:post_list' %}">Back</a>
 <h1>{{ post.title }}</h1>
 <p>Published: {{ post.publish }} by {{ post.author }}</p>
-{{ post.body|linebreaks }}
+{{ post.body|markdown }}
 <p>
   <a href="{% url "blog:post_share" post.id %}">
     Share this post

@@ -1,4 +1,4 @@
-{% load static %}
+{% load blog_tags %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,8 +10,24 @@
   <body>
     <header>
       <a href="{% url 'blog:post_list' %}"><h1>techBlog</h1></a>
+      <p>I have written {% total_blogs %} blogs so far.</p>
     </header>
     <main>{% block content %} {% endblock %}</main>
+    <section class="latest_blogs">
+      <h3>Latests Blogs</h3>
+      {% show_latest_blogs 3 %}
+    </section>
+    <section class="most_commented_blogs">
+      <h3>Most Commented Blogs</h3>
+      {% get_most_commented_blogs as most_commented_blogs %}
+      <ul>
+        {% for post in most_commented_blogs %}
+        <li>
+          <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
     <footer>
       <p>Footer</p>
     </footer>
