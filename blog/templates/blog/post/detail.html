@@ -15,6 +15,11 @@
     {{ total_comments }} comment{{ total_comments|pluralize }}
   </h2>
 {% endwith %}
+
+
+
+<!-- comments -->
+<div>
 <div>
   {% for comment in comments %}
     <div>
@@ -28,5 +33,20 @@
   {% endfor %}
 </div>
   {% include "blog/post/includes/comment_form.html" %}
+</div>
+<!-- similar posts -->
+<div>
+  <h2>Similar posts</h2>
+  <div>
+  {% for post in similar_posts %}
+    <p>
+      <a href="{{post.get_absolute_url}}">
+        {{ post.title }}
+      </a>
+    </p>
+    {% empty %}
+    <p>There are no similar posts yet.</p>
+  {% endfor %}</div>
+</div>
 </div>
 {% endblock content %}

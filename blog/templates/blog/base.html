@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>techBlog</h1>
+      <a href="{% url 'blog:post_list' %}"><h1>techBlog</h1></a>
     </header>
     <main>{% block content %} {% endblock %}</main>
     <footer>
