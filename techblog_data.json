@@ -1,0 +1,1115 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-12-28T20:50:28.535Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "What is GraphQL",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-12-28T21:51:30.783Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "what's redux",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-12-28T21:51:40.167Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "What is GraphQL",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-12-29T11:35:02.926Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "What is Typescript",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-12-29T11:37:55.602Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "What is React",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-12-29T11:39:22.536Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "what is next js",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-12-29T11:39:34.362Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Another Post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-12-29T21:05:52.996Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "comments on What is GraphQL by admin",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-12-29T21:06:22.493Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "adminTolu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-12-29T21:59:28.428Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "comments on What is GraphQL by mercy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-01-02T23:33:05.728Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "what is next js",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-01-02T23:33:23.180Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "What is React",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-01-02T23:33:45.189Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "what's redux",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-01-02T23:33:58.346Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "What is Typescript",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-01-02T23:57:21.347Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "A Markdown Post",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-01-02T23:57:50.565Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "A Markdown Post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-01-02T23:58:34.051Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "A Markdown Post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-01-03T00:06:29.407Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "localhost:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$DaGCvOoNalqlyEbLZhFqsc$QdO9jxhHpCiPiFo9FoiloesZA2jPkBBkpSLELuCZgAk=",
+    "last_login": "2022-12-29T21:04:34Z",
+    "is_superuser": true,
+    "username": "adminTolu",
+    "first_name": "Tolu",
+    "last_name": "Adeyemo",
+    "email": "tolu@techblog.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-12-28T19:27:15Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vkagcvxgv36g7d9ng1tffvgygvvsui0u",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBmWgq6dN8zkIEZpGpoUtqV8e7apAvd_vfef6lA21rC1mQJE6uLAnX63SKlh9Qd8J3qbdZprusyRb0r-qBNjzPL83q4fweFWvnWSIm98eISO8SzjZ0YsgASYxYLgtl45uy61LseeEBEyewZbHIQ7aDeH_rlOFg:1pB04o:5nQboUR1LDhKEeUA6boH_qCgwFq3r3eKNQz9xPPNAOw",
+    "expire_date": "2023-01-12T21:04:34.615Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "What is GraphQL",
+    "slug": "what-is-graphql",
+    "body": "GraphQL is a query language for your API (Application Programming Interface). It is a syntax that allows clients to request data from a server in a flexible and efficient way. GraphQL was developed by Facebook and was released as open-source in 2015.\r\n\r\nWith GraphQL, clients can specify exactly the data they need and receive it in a predictable and hierarchical structure. This allows clients to be more efficient, as they can request only the data they need and avoid receiving unnecessary data. It also allows servers to be more flexible, as they can support a wide range of client requests without the need for multiple endpoints.\r\n\r\nGraphQL is often used as an alternative to REST APIs (Representational State Transfer APIs), as it provides more flexibility and control for clients when requesting data. It is commonly used in modern web development to build APIs for web and mobile applications.",
+    "publish": "2022-12-28T20:47:32Z",
+    "created": "2022-12-28T20:50:28.518Z",
+    "author": 1,
+    "updated": "2022-12-28T21:51:40.162Z",
+    "status": "Pb"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "Another Post",
+    "slug": "another-post",
+    "body": "post body",
+    "publish": "2022-12-28T21:00:56Z",
+    "created": "2022-12-28T21:01:08.287Z",
+    "author": 1,
+    "updated": "2022-12-29T11:39:34.357Z",
+    "status": "Pb"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "what's redux",
+    "slug": "whats-redux",
+    "body": "Redux is a state management library for JavaScript applications. It is often used with libraries such as React to build user interfaces.\r\n\r\nIn a Redux application, the state of the entire application is stored in a single object, called the \"store\". The store is immutable, meaning that it cannot be directly modified. Instead, modifications to the store are made by dispatching \"actions\", which are objects that describe a change to the store. Actions are processed by \"reducers\", which are pure functions that take the current state of the store and an action as inputs and return a new state.\r\n\r\nOne of the key benefits of using Redux is that it makes it easy to manage state in a predictable and consistent way. It also helps to enforce a separation of concerns between different parts of the application, as actions and reducers can be clearly defined and managed separately from the UI (user interface) components of the application.\r\n\r\nRedux is widely used in modern web development to manage state in complex applications, and it is particularly popular in the React ecosystem.",
+    "publish": "2022-12-28T21:50:03Z",
+    "created": "2022-12-28T21:51:30.778Z",
+    "author": 1,
+    "updated": "2023-01-02T23:33:45.169Z",
+    "status": "Pb"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "What is Typescript",
+    "slug": "what-is-typescript",
+    "body": "TypeScript is a programming language that is a strict syntactical superset of JavaScript, meaning that it is a version of JavaScript that includes additional features not found in the standard version of the language. It was developed and is maintained by Microsoft, and it was designed to be used in large-scale applications to improve the reliability and maintainability of code.\r\n\r\nSome of the key features of TypeScript include:\r\n\r\nTypes: TypeScript introduces a type system to JavaScript, allowing variables and functions to be annotated with a specific type. This can help to catch errors at compile-time rather than runtime, improving the reliability of code.\r\n\r\nClasses: TypeScript includes support for classes and object-oriented programming, allowing developers to write code in a more structured and organized way.\r\n\r\nInterfaces: TypeScript includes support for defining interfaces, which are contracts that specify the shape of an object or the signature of a function. Interfaces can be used to enforce consistent API (Application Programming Interface) design and improve code reuse.\r\n\r\nTypeScript is often used in the development of web applications, and it is particularly popular in the Angular framework. It is also used in the development of applications for other platforms, such as desktop and mobile.",
+    "publish": "2022-12-29T11:33:09Z",
+    "created": "2022-12-29T11:35:02.896Z",
+    "author": 1,
+    "updated": "2023-01-02T23:33:58.329Z",
+    "status": "Pb"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "What is React",
+    "slug": "what-is-react",
+    "body": "React is a JavaScript library for building user interfaces. It was developed and is maintained by Facebook, and it is widely used for building single-page applications (SPAs) and mobile applications.\r\n\r\nReact is based on the idea of \"reactive programming\", which involves building applications as a series of self-contained components that can be combined to create complex user interfaces. Each component is responsible for rendering a specific piece of the UI and handling user interactions. Components can be reused and composed to create larger and more complex UI components.\r\n\r\nOne of the key benefits of using React is that it allows developers to create highly interactive and responsive user interfaces without the need for complex code. It also makes it easier to build applications that are maintainable and scalable, as components can be easily modified and reused.\r\n\r\nReact is often used in conjunction with other libraries or frameworks, such as Redux for state management, an",
+    "publish": "2022-12-29T11:35:08Z",
+    "created": "2022-12-29T11:37:55.599Z",
+    "author": 1,
+    "updated": "2023-01-02T23:33:23.163Z",
+    "status": "Pb"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "what is next js",
+    "slug": "what-is-next-js",
+    "body": "Next.js is a JavaScript framework for building server-rendered or statically-exported websites and applications. It is built on top of React and is developed and maintained by Vercel (formerly known as Zeit).\r\n\r\nNext.js provides a set of tools and conventions for building server-side rendered React applications, making it easy to build efficient and SEO-friendly web applications. It includes features such as automatic code splitting, optimized performance, and support for server-side rendering and static exporting.\r\n\r\nSome of the key benefits of using Next.js include:\r\n\r\nServer-side rendering: Next.js allows developers to build server-side rendered React applications, which can improve the performance and SEO of the application.\r\n\r\nStatic exporting: Next.js includes tools for statically exporting a React application to HTML and JavaScript, allowing it to be hosted on a static file server.\r\n\r\nRouting: Next.js includes built-in support for client-side routing, making it easy to build applications with multiple pages and nested routes.\r\n\r\nNext.js is commonly used to build server-side rendered React applications for the web, and it is particularly popular for building serverless applications and server-rendered applications that need to be optimized for performance and SEO",
+    "publish": "2022-12-29T11:37:55Z",
+    "created": "2022-12-29T11:39:22.533Z",
+    "author": 1,
+    "updated": "2023-01-02T23:33:05.701Z",
+    "status": "Pb"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "A Markdown Post",
+    "slug": "a-markdown-post",
+    "body": "This is  a post formatted with markdown\r\n--------------------------------------------------------------------\r\n\r\n*This is emphasized* and  **this is more emphasized**\r\n\r\nHere is a list:\r\n\r\n*  one\r\n* two\r\n* three",
+    "publish": "2023-01-02T23:54:24Z",
+    "created": "2023-01-02T23:57:21.327Z",
+    "author": 1,
+    "updated": "2023-01-02T23:58:34.042Z",
+    "status": "Pb"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "name": "admin",
+    "email": "admin@admin.com",
+    "body": "GraphQL is a type of api",
+    "created": "2022-12-29T21:05:52.993Z",
+    "updated": "2022-12-29T21:05:52.993Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 1,
+    "name": "mercy",
+    "email": "mercy@email.com",
+    "body": "GraphQL is a query language for your API",
+    "created": "2022-12-29T21:59:28.425Z",
+    "updated": "2022-12-29T21:59:28.425Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 6,
+    "name": "tolu",
+    "email": "tolu@email.com",
+    "body": "Next js is a react full stack framework",
+    "created": "2022-12-29T22:03:58.386Z",
+    "updated": "2022-12-29T22:03:58.386Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 5,
+    "name": "john",
+    "email": "john@email.com",
+    "body": "educative blog, Thanks",
+    "created": "2022-12-29T22:08:57.835Z",
+    "updated": "2022-12-29T22:08:57.835Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "post": 6,
+    "name": "david",
+    "email": "david@email.com",
+    "body": "nice",
+    "created": "2022-12-29T22:09:35.600Z",
+    "updated": "2022-12-29T22:09:35.600Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "nextjs",
+    "slug": "nextjs"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "javascript",
+    "slug": "javascript"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "new",
+    "slug": "new"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "react",
+    "slug": "react"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "redux",
+    "slug": "redux"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "typescript",
+    "slug": "typescript"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "markdown",
+    "slug": "markdown"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 6,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 11,
+  "fields": {
+    "tag": 7,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 12,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 13,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 14,
+  "fields": {
+    "tag": 9,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 15,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "localhost:8000"
+  }
+}
+]
