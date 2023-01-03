@@ -13,6 +13,11 @@
       <p>I have written {% total_blogs %} blogs so far.</p>
     </header>
     <main>{% block content %} {% endblock %}</main>
+    <div class="feeds">
+      <p>
+        <a href="{% url "blog:post_feed" %}">Subscribe to my RSS feed</a>
+      </p>
+    </div>
     <section class="latest_blogs">
       <h3>Latests Blogs</h3>
       {% show_latest_blogs 3 %}
