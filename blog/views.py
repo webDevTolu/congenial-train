@@ -8,7 +8,7 @@ from django.views.decorators.http import require_POST
 from taggit.models import Tag
 from django.db.models import Count
 from django.contrib.postgres.search import TrigramSimilarity
-from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
+from django.contrib.postgres.search import SearchVector, SearchQuery
 
 # Create your views here.
 
@@ -107,3 +107,7 @@ def blog_search(request):
             results = Post.published.annotate(
                 similarity=TrigramSimilarity('title', query),).filter(similarity__gt=0.1).order_by('-similarity')
     return render(request, 'blog/post/search.html', {'form': form, 'query': query, 'results': results})
+
+
+def error_404(request, exception):
+    return render(request, 'blog/404.html')
