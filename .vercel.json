@@ -1,0 +1,19 @@
+{
+  "builds": [
+    {
+      "src": "techBlog/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.11",
+        "wsgiApplicationName": "application"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/techBlog/wsgi.py"
+    }
+  ]
+}
