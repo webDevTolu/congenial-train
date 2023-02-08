@@ -4,3 +4,7 @@ a {
   font-weight: bold;
   color: black;
 }
+a:active,
+a:hover {
+  color: deepskyblue;
+}
