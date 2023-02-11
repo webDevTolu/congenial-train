@@ -1,1 +1,1 @@
-web: gunicorn 'techBlog.wsgi
+web: python manage.py migrate && gunicorn techBlog.wsgi
