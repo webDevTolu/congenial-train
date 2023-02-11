@@ -26,7 +26,7 @@ environ.Env.read_env()
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -91,12 +91,23 @@ WSGI_APPLICATION = 'techBlog.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ['DB_NAME'],
+#         "USER": os.environ['DB_USER'],
+#         'PASSWORD': os.environ['DB_PASSWORD'],
+#     }
+# }
+# production database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ['DB_NAME'],
-        "USER": os.environ['DB_USER'],
-        'PASSWORD': os.environ['DB_PASSWORD'],
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ["PGDATABASE"],
+        'USER': os.environ["PGUSER"],
+        'PASSWORD': os.environ["PGPASSWORD"],
+        'HOST': os.environ["PGHOST"],
+        'PORT': os.environ["PGPORT"],
     }
 }
 
