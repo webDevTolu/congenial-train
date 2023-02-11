@@ -1,27 +1,79 @@
-{% extends "blog/base.html" %} {% load blog_tags %}  {% block title %} techBlog {% endblock title %}
+{% extends "blog/base.html" %} {% load blog_tags %} {% block title %} techBlog {% endblock title %}
 {% block content %}
-<h1>Recent blogs</h1>
-<div>
-  {% if tag %}
-  <h2>Posts tagged with "{{ tag.name }}"</h2>
-  {% endif %}
-</div>
-{% for post in posts %}
-<h2>
-  <a href="{{ post.get_absolute_url }}"> {{ post.title }} </a>
-</h2>
-{% if post.tags.all %}
-<p>Tags: 
-  {% for tag in post.tags.all %}
-    <a href="{% url "blog:post_list_by_tag" tag.slug %}">{{tag.name}}</a> 
-    {% if not forloop.last %},
-    {% endif %}
-  {% endfor %}
-</p>
+{% if tag %} <main class="w-full h-20 md:h-24 bg-light-hover dark:bg-dark-hover my-4 md:my-8">
+  <div class="flex justify-between items-center w-full px-2 md:px-0 md:w-5/6 lg:w-3/4 mx-auto h-full">
+    <h3 class="text-lg md:text-xl font-medium text-light-text dark:text-dark-text">
+      Posts tagged with "{{tag.name}}"
+    </h3>
+    <a href="{% url "blog:post_list" %}" class="text-link hover:text-linkHover text-sm">Home</a>
+  </div>
+</main>
 {% endif %}
+<main class="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-4 md:gap-x-4 p-2 md:p-4">
+  <section class="md:col-span-2 w-full">
+    <!-- blog list -->
+    <div class="flex flex-col gap-y-6">
+      {% for post in posts %}
 
-<p>Published: {{ post.publish }} by {{ post.author }}</p>
-{{ post.body|markdown|truncatewords:30 }} {% endfor %}
-
-<div>{% include "pagination.html" with page=posts %}</div>
+      <div class="w-full grid grid-cols-1 md:grid-cols-7 gap-y-4 p-2">
+        <!-- author and date -->
+        <div class="md:col-span-2 text-sm font-normal text-light-textSubtle dark:text-dark-textSubtle">
+          <span>{{ post.author }}</span> | <span>{{post.publish}}</span>
+        </div>
+        <!-- content -->
+        <div
+          class="md:col-span-5 flex flex-col gap-y-2 hover:bg-light-hover dark:hover:bg-dark-hover hover:cursor-pointer rounded-2xl p-2">
+          <h3 class="capitalize text-xl md:text-3xl font-bold text-light-text dark:text-dark-text">
+            {{ post.title }}
+          </h3>
+          <p class="text-base text-light-textSec dark:text-dark-textSec">
+            {{ post.body|markdown|truncatewords:30 }}
+          </p>
+          <a href="{{ post.get_absolute_url }}" title="read more" class="text-sm font-medium text-link w-max">Read full
+            blog</a>
+          <!-- tags -->
+          <div class="flex gap-x-1.5">
+            {% for tag in post.tags.all %}
+            <a href="{% url "blog:post_list_by_tag" tag.slug %}" title="blog tag title"
+              class="bg-light-hover dark:bg-dark-hover text-light-textSec dark:text-dark-textSec px-2 py-0.5 rounded-lg text-sm font-semibold font-sans capitalize">{{tag.name}}</a>
+            {% if not forloop.last %},
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <!-- sidebar -->
+  <div
+    class="md:col-span-1 h-max bg-light-hover dark:bg-dark-hover text-light-text dark:text-dark-text rounded-md p-3 flex flex-col gap-y-4">
+    <!-- latest posts -->
+    <div class="flex flex-col gap-y-6 p-2">
+      <h3 class="text-3xl font-semibold text-light-text dark:text-dark-text">
+        Latest Posts
+      </h3>
+      <!-- post list -->
+      {% show_latest_blogs 5 %}
+    </div>
+    <!-- popular posts -->
+    <div class="flex flex-col gap-y-6 p-2">
+      <h3 class="text-3xl font-semibold text-light-text dark:text-dark-text">
+        Trending Posts 🔥
+      </h3>
+      <!-- post list -->
+      {% get_most_commented_blogs as most_commented_blogs %}
+      <ul class="flex flex-col gap-y-4">
+        {% for post in most_commented_blogs %}
+        <!-- post list item -->
+        <li
+          class="text-2xl font-medium text-light-textSec dark:text-dark-textSec hover:underline decoration-link hover:text-light-text dark:hover:text-dark-text">
+          <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</main>
+{% include "pagination.html" with page=posts %}
 {% endblock %}

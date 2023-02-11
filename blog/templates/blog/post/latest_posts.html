@@ -1,6 +1,8 @@
-<ul>
+<ul class="flex flex-col gap-y-4">
   {% for post in latest_blogs %}
-  <li>
+  <li
+    class="text-2xl font-medium text-light-textSec dark:text-dark-textSec hover:underline decoration-link hover:text-light-text dark:hover:text-dark-text"
+  >
     <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
   </li>
   {% endfor %}

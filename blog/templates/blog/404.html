@@ -1,3 +1,39 @@
-<p>this page is not found</p>
+{% extends "blog/base.html" %} {% load blog_tags %} {% block title %} Error 404
+- Page Not Found {% endblock title %} {% block content %}
+<!-- main -->
+<main class="mt-6 w-full px-2 flex items-center justify-center h-[85vh]">
+  <div class="w-full md:w-5/6 lg:w-3/4 mx-auto flex flex-col gap-y-8">
+    <!-- logo -->
+    <div class="w-max mx-auto">
+      <img src="{% static 'images/logo.png' %}" alt="logo" />
+    </div>
+    <!-- content -->
+    <div class="flex flex-col gap-y-2 items-center justify-center">
+      <p class="text-base font-bold text-link md:text-lg">404</p>
+      <h3
+        class="text-4xl md:text-6xl font-medium text-light-text dark:text-dark-text"
+      >
+        Page not found.
+      </h3>
+      <p class="text-base text-light-textSec dark:text-dark-textSec">
+        Sorry, we couldn't find the page you're looking for.
+      </p>
+      <a
+        href="{% url 'blog:post_list' %}"
+        class="flex space-x-1 items-center text-link"
+      >
+        <span class="text-base font-medium">Go back home</span>
+        <span
+          ><svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path
+              fill-rule="evenodd"
+              d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
+              clip-rule="evenodd"
+            />
+          </svg> </span
+      ></a>
+    </div>
+  </div>
+</main>
 
-<a href="{% url 'blog:post_list' %}">Back home</a>
+{% endblock %}

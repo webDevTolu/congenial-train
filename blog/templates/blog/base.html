@@ -1,40 +1,100 @@
 {% load blog_tags %} {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %} {% endblock title %}</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>techBlog</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{% static 'images/favicon.svg' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static 'images/favicon.png' %}"
+    />
   </head>
-  <body>
-    <header>
-      <a href="{% url 'blog:post_list' %}"><h1>techBlog</h1></a>
-      <p>I have written {% total_blogs %} blogs so far.</p>
-    </header>
-    <main>{% block content %} {% endblock %}</main>
-    <div class="feeds">
-      <p>
-        <a href="{% url "blog:post_feed" %}">Subscribe to my RSS feed</a>
+  <body
+    class="bg-light-background dark:bg-dark-background scrollbar-hide font-body"
+  >
+    <!-- nav -->
+    <nav
+      class="w-full flex justify-between items-center py-4 px-4 md:px-6 lg:px-8 mx-auto"
+    >
+      <!-- logo section -->
+      <a href="{% url 'blog:post_list' %}" class="cursor-pointer">
+        <p class="text-3xl font-bold text-stone-800 dark:text-stone-100">
+          tech<span class="text-link">Blog</span>
+        </p>
+      </a>
+      <!-- right -->
+      <div class="flex items-center gap-x-4 md:gap-x-6">
+        <!-- search -->
+        <a
+          href="{% url 'blog:blog_search' %}"
+          title="search"
+          class="cursor-pointer text-gray-800 dark:text-gray-100"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-4 h-4 md:w-6 md:h-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+        <!-- dark mode toggle -->
+        <div
+          class="h-8 w-8 md:h-10 md:w-10 rounded-full flex items-center justify-center bg-gray-300 hover:bg-gray-400/75 cursor-pointer"
+          onclick="darkModeToggle()"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-4 h-4 md:h-6 md:w-6"
+            id="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.455 2.004a.75.75 0 01.26.77 7 7 0 009.958 7.967.75.75 0 011.067.853A8.5 8.5 0 116.647 1.921a.75.75 0 01.808.083z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    {% block content %} {% endblock %}
+
+    <!-- footer -->
+    <footer
+      class="flex flex-col items-center justify-center h-[25vh] border border-light-hover dark:border-dark-hover gap-y-4 mt-8"
+    >
+      <div class="w-max mx-auto flex items-center gap-x-1">
+        <img
+          src="{% static 'images/logo.png' %}"
+          alt="logo"
+          class="w-auto h-1/2 object-center object-contain"
+        />
+        <span class="text-light-text dark:text-dark-text text-sm font-bold"
+          >tech<span class="text-link">Blog</span></span
+        >
+      </div>
+
+      <p
+        class="text-sm font-semibold text-light-textSec dark:text-dark-textSec"
+      >
+        &copy; <span id="currentYear"></span> techBlog.com. All rights reserved.
       </p>
-    </div>
-    <section class="latest_blogs">
-      <h3>Latests Blogs</h3>
-      {% show_latest_blogs 3 %}
-    </section>
-    <section class="most_commented_blogs">
-      <h3>Most Commented Blogs</h3>
-      {% get_most_commented_blogs as most_commented_blogs %}
-      <ul>
-        {% for post in most_commented_blogs %}
-        <li>
-          <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-    <footer>
-      <p>Footer</p>
     </footer>
   </body>
 </html>

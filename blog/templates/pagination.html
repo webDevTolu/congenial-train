@@ -1,11 +1,25 @@
-<div>
-  <span>
+<!-- pagination -->
+<div
+  class="w-full flex flex-col md:flex-row gap-y-3 justify-between md:items-center px-4 py-2 dark:text-dark-textSec text-light-textSec text-sm mx-auto"
+>
+  <!-- pages -->
+  <p class="font-medium">
+    Page {{ page.number }} of {{ page.paginator.num_pages }}
+  </p>
+  <!-- buttons -->
+  <div class="flex items-center gap-x-4">
     {% if page.has_previous %}
-    <a href="?page={{ page.previous_page_number }}">Previous</a>
+    <a
+      href="?page={{ page.previous_page_number }}"
+      class="rounded-md border border-light-textSec dark:border-dark-textSec dark:hover:bg-dark-hover hover:bg-light-hover dark:hover:text-dark-text hover:text-light-text hover:border-none font-medium px-4 py-2"
+      >Previous</a
+    >
+    {% endif %} {% if page.has_next %}
+    <a
+      href="?page={{ page.next_page_number }}"
+      class="rounded-md border border-light-textSec dark:border-dark-textSec dark:hover:bg-dark-hover hover:bg-light-hover dark:hover:text-dark-text hover:text-light-text hover:border-none font-medium px-4 py-2"
+      >Next</a
+    >
     {% endif %}
-    <span> Page {{ page.number }} of {{ page.paginator.num_pages }} </span>
-    {% if page.has_next %}
-    <a href="?page={{ page.next_page_number }}">Next</a>
-    {% endif %}
-  </span>
+  </div>
 </div>
